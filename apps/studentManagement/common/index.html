@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>index</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="images/favicon.png">
+    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    		<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.0.js"></script>
+<script type="text/javascript" src="dojox/mobile/deviceTheme.js"></script>
+<script type="text/javascript"
+	data-dojo-config="isDebug: false, async: true, parseOnLoad: true, mblHideAddressBar: false"
+	src="dojo/dojo.js"></script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+</head>
+    	<body style="display: none;">
+    		<div data-role="page" id="page">
+		<div data-role="header" id="header" data-position="fixed" >
+			<h3 style="font-size: x-small; text-align: center">College Of Engineering and Technology</h3>
+		</div>
+		<div data-role="content" style="padding: 10px">
+			<div data-dojo-type="dojox.mobile.Heading" data-dojo-props="label:'Student Management'" style="font-weight: bold; font-size: large; text-align: left;"></div>
+			<!--application UI goes here-->
+    				
+    			</div>
+    		</div>
+	
+	<div data-dojo-type="dojox.mobile.ScrollableView" id="setting0">
+		<div data-dojo-type="dojox.mobile.Heading"
+			data-dojo-props="label:'AppSettings', fixed:'top'"></div>
+		<div data-dojo-type="dojox.mobile.EdgeToEdgeList"
+			data-dojo-props="variableHeight: true">
+			<div data-dojo-type="dojox.mobile.ListItem">
+				Language
+				<div style="font-size: small; color: gray">English</div>
+				<div style="font-size: small; color: gray">Hindi</div>
+			</div>
+			<div data-dojo-type="dojox.mobile.ListItem">
+				Volume Level
+				<div style="font-size: small; color: gray">High</div>
+			</div>
+			<div data-dojo-type="dojox.mobile.ListItem">
+				Button Color
+				
+				<div style="font-size: small; color: gray">Blue</div>
+			</div>
+			<div data-dojo-type="dojox.mobile.ListItem">
+				Background Color
+				<div style="font-size: small; color: gray">White</div>
+			</div>
+			<div data-dojo-type="dojox.mobile.ListItem">
+				Cache Size
+				<div style="font-size: small; color: gray">100 kb</div>
+				
+			</div>
+					</div>
+	</div>
+	<div data-role="footer" data-position="fixed" id="footer">
+		
+	<h4 style="text-align: right">Application mantained by Musketeers</h4>
+	</div>
+	<div data-dojo-type="dojox.mobile.View" id="offline0">
+		<label id="label">You are:</label><br><input type="radio"
+			name="radio-choice" id="radio" value="radio"><label for="radio">Student</label><input
+			type="radio" name="radio-choice" id="radio" value="radio"><label
+			for="radio">Faculty</label>
+	</div>
+	<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    	<div data-dojo-type="ngn.view.FormView" data-dojo-props="nid: 'view0', title: 'offlineMode1'">
+	<div data-dojo-type="ngn.view.FieldSection"></div>
+</div>
+	
+</body>
+</html>
