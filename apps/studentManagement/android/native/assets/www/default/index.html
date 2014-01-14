@@ -1,0 +1,80 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>index</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon">
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "studentManagement",
+   "APP_ID": "studentManagement",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1420749232",
+   "WORKLIGHT_PLATFORM_VERSION": "6.1.0.00.20131219-1900",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/studentManagement\/android\/"
+};</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.0.js"></script>
+<script src="dojox/mobile/deviceTheme.js" type="text/javascript"></script>
+<script data-dojo-config="isDebug: false, async: true, parseOnLoad: true, mblHideAddressBar: false" src="http://192.168.56.1:9988/dojoLib/CET/studentManagement/android/dojo/dojo.js" type="text/javascript"></script>
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+    </head>
+    <body style="display: none;">
+        <div data-role="page" id="page">
+            <div data-position="fixed" data-role="header" id="header">
+                <h3 style="font-size: medium; text-align: center">College Of Engineering and Technology</h3>
+            </div>
+            <div data-role="content" style="padding: 10px">
+                <div data-dojo-props="label:'Student Management'" data-dojo-type="dojox.mobile.Heading" style="font-weight: bold; font-size: large; text-align: left;"></div>
+                <a href="off1.htm" id="link">Connect to other file</a>
+			<!--application UI goes here-->
+            </div>
+        </div>
+        <div data-dojo-type="dojox.mobile.View" id="offline0" onclick="get">
+            <label id="label">You are:</label>
+            <br>
+            <input checked id="radio1" name="radio-choice" type="radio" value="radio1"><label for="radio">Student</label>
+            <br>
+            <input id="radio" name="radio-choice" type="radio" value="radio2"><label for="radio">Faculty</label>
+            <br>
+            <button data-dojo-type="dojox.mobile.Button" formmethod="getradio();" id="sub-button" style="font-weight: bold">Submit</button>
+            <div data-position="fixed" data-role="footer" id="footer">
+                <h4 style="text-align: right">Application
+			mantained by Musketeers</h4>
+            </div>
+        </div>
+        <script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+        <div data-dojo-props="nid: 'view0', title: 'offlineMode1'" data-dojo-type="ngn.view.FormView">
+            <div data-dojo-type="ngn.view.FieldSection"></div>
+        </div>
+        <div data-dojo-props="nid: 'off1', title: 'Offline '" data-dojo-type="ngn.view.FormView">
+            <div data-dojo-type="ngn.view.FieldSection"></div>
+        </div>
+    </body>
+</html>

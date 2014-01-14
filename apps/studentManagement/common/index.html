@@ -21,59 +21,34 @@
 <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
 <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
 <link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
 </head>
     	<body style="display: none;">
     		<div data-role="page" id="page">
 		<div data-role="header" id="header" data-position="fixed" >
-			<h3 style="font-size: x-small; text-align: center">College Of Engineering and Technology</h3>
+			<h3 style="font-size: medium; text-align: center">College Of Engineering and Technology</h3>
 		</div>
 		<div data-role="content" style="padding: 10px">
 			<div data-dojo-type="dojox.mobile.Heading" data-dojo-props="label:'Student Management'" style="font-weight: bold; font-size: large; text-align: left;"></div>
+			<a href="off1.html" id="link">Connect to other file</a>
 			<!--application UI goes here-->
     				
     			</div>
     		</div>
+
+
+
+
 	
-	<div data-dojo-type="dojox.mobile.ScrollableView" id="setting0">
-		<div data-dojo-type="dojox.mobile.Heading"
-			data-dojo-props="label:'AppSettings', fixed:'top'"></div>
-		<div data-dojo-type="dojox.mobile.EdgeToEdgeList"
-			data-dojo-props="variableHeight: true">
-			<div data-dojo-type="dojox.mobile.ListItem">
-				Language
-				<div style="font-size: small; color: gray">English</div>
-				<div style="font-size: small; color: gray">Hindi</div>
-			</div>
-			<div data-dojo-type="dojox.mobile.ListItem">
-				Volume Level
-				<div style="font-size: small; color: gray">High</div>
-			</div>
-			<div data-dojo-type="dojox.mobile.ListItem">
-				Button Color
-				
-				<div style="font-size: small; color: gray">Blue</div>
-			</div>
-			<div data-dojo-type="dojox.mobile.ListItem">
-				Background Color
-				<div style="font-size: small; color: gray">White</div>
-			</div>
-			<div data-dojo-type="dojox.mobile.ListItem">
-				Cache Size
-				<div style="font-size: small; color: gray">100 kb</div>
-				
-			</div>
-					</div>
-	</div>
-	<div data-role="footer" data-position="fixed" id="footer">
-		
-	<h4 style="text-align: right">Application mantained by Musketeers</h4>
-	</div>
-	<div data-dojo-type="dojox.mobile.View" id="offline0">
+	<div data-dojo-type="dojox.mobile.View" id="offline0" onclick="get">
 		<label id="label">You are:</label><br><input type="radio"
-			name="radio-choice" id="radio" value="radio"><label for="radio">Student</label><input
-			type="radio" name="radio-choice" id="radio" value="radio"><label
-			for="radio">Faculty</label>
-	</div>
+			name="radio-choice" id="radio1" value="radio1" checked><label for="radio">Student</label><br><input
+			type="radio" name="radio-choice" id="radio" value="radio2"><label
+			for="radio">Faculty</label><br><button
+			data-dojo-type="dojox.mobile.Button" id="sub-button" style="font-weight: bold" formmethod="getradio();">Submit</button>
+		
+		<div data-role="footer" data-position="fixed" id="footer"><h4 style="text-align: right">Application			mantained by Musketeers</h4>
+	</div></div>
 	<script src="js/initOptions.js"></script>
     		<script src="js/main.js"></script>
     		<script src="js/messages.js"></script>
@@ -81,5 +56,7 @@
 	<div data-dojo-type="ngn.view.FieldSection"></div>
 </div>
 	
-</body>
+<div data-dojo-type="ngn.view.FormView" data-dojo-props="nid: 'off1', title: 'Offline '">
+	<div data-dojo-type="ngn.view.FieldSection"></div>
+</div></body>
 </html>

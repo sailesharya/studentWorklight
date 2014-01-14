@@ -26,7 +26,7 @@ function wlCommonInit(){
 
 function dojoInit() {
 	require([ "dojo/ready", "dojo/parser", "dojo/dom", "dijit/registry",
-			"dojox/mobile/Heading", "dojox/mobile", "dojox/mobile/ScrollableView", "dojox/mobile/EdgeToEdgeList", "dojox/mobile/ListItem", "dojox/mobile/TextBox", "dojox/mobile/View" ], function(ready) {
+			"dojox/mobile/Heading", "dojox/mobile", "dojox/mobile/ScrollableView", "dojox/mobile/EdgeToEdgeList", "dojox/mobile/ListItem", "dojox/mobile/TextBox", "dojox/mobile/View", "dojox/mobile/Button" ], function(ready) {
 		ready(function() {
 		});
 	});

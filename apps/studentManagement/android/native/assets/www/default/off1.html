@@ -1,0 +1,34 @@
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<div data-dojo-type="dojox.mobile.View">
+	<div data-role="header" id="header" data-position="fixed">
+		<h3>Welcome to CET</h3>
+	</div>
+	<label id="label">You are:</label><div
+		data-dojo-type="dojox.mobile.RoundRect">Student </div>
+	<h2 data-dojo-type="dojox.mobile.RoundRectCategory" onclick='alert("Entered");' id="teacher" ondblclick="alert('Double clk')">Tecaher</h2>
+
+</div>
+<script src="jqueryMobile/jquery.mobile-1.4.0.js"></script>
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="jqueryMobile/jquery.mobile-1.4.0.css" rel="stylesheet">
+<script type="text/javascript" src="dojox/mobile/deviceTheme.js"></script>
+<script type="text/javascript"
+	data-dojo-config="isDebug: false, async: true, parseOnLoad: true, mblHideAddressBar: false"
+	src="dojo/dojo.js"></script>
+<script type="text/javascript">
+require(
+// Set of module identifiers
+[ "dojox/mobile/RoundRect", "dojox/mobile/RoundRectCategory" ],
+// Callback function, invoked on dependencies evaluation results
+function() {
+	ready(function() {
+
+	});
+});
+</script>

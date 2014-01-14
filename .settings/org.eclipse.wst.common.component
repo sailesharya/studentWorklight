@@ -2,6 +2,7 @@
     <wb-module deploy-name="CET">
         <wb-resource deploy-path="/" source-path="/apps/studentManagement/common"/>
         <wb-resource deploy-path="/" source-path="/www"/>
+        <wb-resource deploy-path="/" source-path="/apps/studentManagement/android"/>
         <property name="context-root" value="CET"/>
     </wb-module>
 </project-modules>
